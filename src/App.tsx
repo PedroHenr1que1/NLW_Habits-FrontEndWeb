@@ -1,10 +1,10 @@
-import { Habit } from "./components/Habits"
+import Homepage from "./pages/HomePage/Homepage"
 
 function App() {
 
   return (
     <>
-    <Habit completed={1}/>
+      <Homepage/>
     </>
   )
 }
