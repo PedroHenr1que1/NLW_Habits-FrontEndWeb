@@ -12,9 +12,14 @@ export const Button = styled.button`
   border-radius: 8px;
   border: ${Colors.purple} solid 1px;
   gap: 15px;
+  cursor: pointer;
 
   :active{
     opacity: 0.75;
+    transition: 100ms;
+  }
+  :hover{
+    zoom: 1.05;
     transition: 100ms;
   }
 `;

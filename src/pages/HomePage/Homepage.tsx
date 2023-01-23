@@ -1,20 +1,14 @@
 import {
   Background,
-  ConteinerHeader,
-  LogoContainer
 } from './Homepage.styles'
 
-import Logo from '../../assets/Logo.svg'
-
-import { Habit } from "../../components/Habits"
+import Header from '../../components/Header/Header'
 
 export default function Homepage() {
 
   return (
     <Background>
-      <ConteinerHeader>
-        <LogoContainer src={Logo} alt='logo'/>
-      </ConteinerHeader>
+      <Header/>
     </Background>
   )
 }

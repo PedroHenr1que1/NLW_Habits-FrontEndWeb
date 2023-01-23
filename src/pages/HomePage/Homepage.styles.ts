@@ -1,15 +1,9 @@
 import styled from "styled-components";
 
-import { Colors } from "../../Themes/Colors";
-
 export const Background = styled.div`
+  height: 95vh;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
 `;
-
-export const ConteinerHeader = styled.div`
-
-`;
-
-export const LogoContainer = styled.img``
