@@ -7,8 +7,13 @@ import {
 
 import { Habit } from '../Habits/Habits';
 
+import { generateDatesFormYearBeggining } from '../../utils/generateDatesFormYearBeggining';
+
 const  weekDays = ["D", "S", "T", "Q", "Q", "S", "S"]
 
+const summaryDates = generateDatesFormYearBeggining()
+
+console.log(summaryDates)
 
 export default function HabitsTable() {
   return (
@@ -19,7 +24,9 @@ export default function HabitsTable() {
         )}
       </ContainerDays>
       <ContainerHabits>
-          <Habit completed={1}/>
+        {summaryDates.map((date: Date, key: number) => 
+          <Habit key={key} completed={1}/>
+        )}
       </ContainerHabits>
     </ContainerTable>
   )
