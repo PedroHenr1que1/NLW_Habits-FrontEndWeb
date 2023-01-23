@@ -1,11 +1,11 @@
-import styled from "styled-components"
+import styled from "styled-components";
+
+import { Colors } from "../../Themes/Colors";
 
 export const Habits = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 10px;
-  height: 10px;
-  background-color: purple;
-  padding: 10px;
+  height: 40px;
+  width: 40px;
+  background-color: ${Colors.HabitBackground};
+  border-radius: 8px;
+  border: 2px solid ${Colors.HabitBorder};
 `

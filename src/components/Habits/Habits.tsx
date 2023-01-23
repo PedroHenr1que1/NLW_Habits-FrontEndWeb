@@ -9,8 +9,6 @@ interface HabitsProps {
 
 export function Habit(props: HabitsProps) {
   return (
-    <>
-      <Habits>{props.completed}</Habits>
-    </>
+    <Habits></Habits>
   )
 }
