@@ -19,7 +19,8 @@ export const Button = styled.button`
     transition: 100ms;
   }
   :hover{
-    zoom: 1.05;
+    color: ${Colors.purple};
+    border: ${Colors.text} solid 1px;
     transition: 100ms;
   }
 `;

@@ -6,8 +6,6 @@ export const ConteinerHeader = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  margin-left: 360px;
-  margin-right: 360px;
 `;
 
 export const LogoContainer = styled.img``
