@@ -5,13 +5,17 @@ import {
   Days
 } from './HabitsTable.style';
 
-import { Habit } from '../Habits/Habits';
+import { Habit } from '../Habit/Habit';
+import { FakeHabit } from '../FakeHabit';
 
 import { generateDatesFormYearBeggining } from '../../utils/generateDatesFormYearBeggining';
 
 const  weekDays = ["D", "S", "T", "Q", "Q", "S", "S"]
 
 const summaryDates = generateDatesFormYearBeggining()
+
+const minimumSummaryDays = 18 * 8
+const amountOfDaysToFill = minimumSummaryDays - summaryDates.length
 
 console.log(summaryDates)
 
@@ -26,6 +30,10 @@ export default function HabitsTable() {
       <ContainerHabits>
         {summaryDates.map((date: Date, key: number) => 
           <Habit key={key} completed={1}/>
+        )}
+
+        {amountOfDaysToFill > 0 && Array.from({length: amountOfDaysToFill}). map ((_ ,key: number) => 
+          <FakeHabit key={key}/>
         )}
       </ContainerHabits>
     </ContainerTable>

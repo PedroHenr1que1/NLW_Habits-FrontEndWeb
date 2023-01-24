@@ -1,6 +1,6 @@
 import {
   Habits
-} from "./Habits.style"
+} from "./Habit.style"
 
 
 interface HabitsProps {
